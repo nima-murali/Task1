@@ -18,3 +18,39 @@ function formvalidation(){
   
   
 }
+/*
+function counter(){
+  var timer = 10;
+
+  let x = setInterval(function(){
+    now = 0;
+    if(timer<0){
+      clearInterval(x);
+    }
+    timeLeft = timer - now;
+    console.log("Our service will be rady in 00."+timeLeft+"seconds");
+    now = now+1;
+    },1000)
+}
+    /*if (timeLeft<0){
+      clearInterval(x);
+      console.log("Countdown Finished")
+    }*/
+
+function counter(){
+  timeleft = 10;
+  for (i=0;i<=10;i++){
+    setTimeout(function fun1(){
+        document.getElementById('timeid').innerHTML = "00."+timeleft;
+        timeleft = timeleft-1;
+        console.log(timeleft);
+        if(timeleft<0){
+          document.getElementById('finishid').innerHTML = "Finished"
+        }
+    },i*1000);
+
+  }
+}
+  
+
+

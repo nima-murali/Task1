@@ -6,12 +6,13 @@
 	<title>Home Page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body id="home" onload="counter()">
 	<div class="loginhome">
-		<h1>You have successfully logged in</h1>
-		<a href="index.html"><button>Logout</button></a>	
+		<h1>Hello User!</h1>
+		<h2>Our service will be ready in <span id="timeid"></span></h2>
+		<h3 id="finishid"></h3>	
+		<a href="index.html">Logout</a>	
 	</div>
-	
-
+	<script type="text/javascript" src="formval.js"></script>
 </body>
 </html>
