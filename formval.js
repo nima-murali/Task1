@@ -14,28 +14,8 @@ function formvalidation(){
     else{
       window.location ="home.html";
     }
-  }
-  
-  
+  }  
 }
-/*
-function counter(){
-  var timer = 10;
-
-  let x = setInterval(function(){
-    now = 0;
-    if(timer<0){
-      clearInterval(x);
-    }
-    timeLeft = timer - now;
-    console.log("Our service will be rady in 00."+timeLeft+"seconds");
-    now = now+1;
-    },1000)
-}
-    /*if (timeLeft<0){
-      clearInterval(x);
-      console.log("Countdown Finished")
-    }*/
 
 function counter(){
   timeleft = 10;
